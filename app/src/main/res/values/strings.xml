@@ -13,4 +13,23 @@
         <item>Felino</item>
     </string-array>
 
+    <string-array name="porte_animal">
+        <item>Selecione</item>
+        <item>Toy | Altura abaixo da canela</item>
+        <item>Pequeno | Altura ate a canela</item>
+        <item>Medio | Altura do joelho ate a coxa</item>
+        <item>Grande | Altura acima da coxa</item>
+        <item>Gigante | Altura do quadril</item>
+    </string-array>
+
+    <string-array name="saude_animal">
+        <item>Selecione</item>
+        <item>Bem e andando normalmente</item>
+        <item>Não esta bem, dificuldade para se mover</item>
+        <item>Mal, não consegue se mover mas não tem ferimentos visiveis</item>
+        <item>Muito mal, não se move e está com ferimentos visiveis</item>
+        <item>Grave, animal em sofrimento e muito machucado</item>
+    </string-array>
+
+
 </resources>

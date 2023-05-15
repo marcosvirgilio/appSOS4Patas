@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".cadPedidoSos">
+    tools:context=".ui.pedidosos.cadPedidoSos">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -21,7 +21,7 @@
                 android:text="Nome" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName"
+                android:id="@+id/etNome"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -34,7 +34,7 @@
                 android:text="Telefone" />
 
             <EditText
-                android:id="@+id/editTextPhone"
+                android:id="@+id/etTelefone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -47,9 +47,37 @@
                 android:text="Data" />
 
             <CalendarView
-                android:id="@+id/calendarView2"
+                android:id="@+id/cvData"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hora" />
+
+            <EditText
+                android:id="@+id/etHora"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="time" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Local" />
+
+            <EditText
+                android:id="@+id/etLocal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                />
 
             <TextView
                 android:id="@+id/textView4"
@@ -58,13 +86,37 @@
                 android:text="Tipo de Animal" />
 
             <Spinner
-                android:id="@+id/spinner"
+                android:id="@+id/spTipoAnimal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:entries="@array/tipo_animal" />
 
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Porte do Animal" />
+
+            <Spinner
+                android:id="@+id/spPorteAnimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/porte_animal" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Saúde do Animal" />
+
+            <Spinner
+                android:id="@+id/spSaudeAnimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/saude_animal" />
+
             <Button
-                android:id="@+id/button"
+                android:id="@+id/btSalvar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Salvar" />
