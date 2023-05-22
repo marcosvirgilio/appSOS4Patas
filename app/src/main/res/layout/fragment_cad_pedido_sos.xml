@@ -21,7 +21,7 @@
                 android:text="Nome" />
 
             <EditText
-                android:id="@+id/etNome"
+                android:id="@+id/etNm"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -34,7 +34,7 @@
                 android:text="Telefone" />
 
             <EditText
-                android:id="@+id/etTelefone"
+                android:id="@+id/etFone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -47,7 +47,7 @@
                 android:text="Data" />
 
             <CalendarView
-                android:id="@+id/cvData"
+                android:id="@+id/cvDt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
@@ -59,7 +59,7 @@
                 android:text="Hora" />
 
             <EditText
-                android:id="@+id/etHora"
+                android:id="@+id/etHr"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -86,7 +86,7 @@
                 android:text="Tipo de Animal" />
 
             <Spinner
-                android:id="@+id/spTipoAnimal"
+                android:id="@+id/spTipo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:entries="@array/tipo_animal" />
@@ -98,7 +98,7 @@
                 android:text="Porte do Animal" />
 
             <Spinner
-                android:id="@+id/spPorteAnimal"
+                android:id="@+id/spPorte"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:entries="@array/porte_animal" />
@@ -110,13 +110,13 @@
                 android:text="Saúde do Animal" />
 
             <Spinner
-                android:id="@+id/spSaudeAnimal"
+                android:id="@+id/spSaude"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:entries="@array/saude_animal" />
 
             <Button
-                android:id="@+id/btSalvar"
+                android:id="@+id/btSvr"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Salvar" />
