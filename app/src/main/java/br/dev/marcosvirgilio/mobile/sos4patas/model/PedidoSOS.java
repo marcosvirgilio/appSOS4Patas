@@ -34,12 +34,11 @@ public class PedidoSOS {
 
     public PedidoSOS(JSONObject jo) {
        try {
-           this.solicitante = null;
-           this.id = jo.getInt("id");
-           this.data = jo.getString("data");
-           this.hora = jo.getString("hora");
-           this.local = jo.getString("local");
-           this.complemento = jo.getString("complemento");
+           //this.solicitante = jo.getString("cdpessoa");
+           this.id = jo.getInt("idpedidosos");
+           this.data = jo.getString("dtpedidosos");
+           this.hora = jo.getString("hrpedidosos");
+           this.local = jo.getString("delocal");
            this.porteAnimal = jo.getInt("cdporteanimal");
            this.tipoAnimal = jo.getInt("cdtipoanimal");
            this.saudeAnimal = jo.getInt("cdsaudeanimal");
@@ -52,12 +51,11 @@ public class PedidoSOS {
     public JSONObject toJsonObject() {
         JSONObject json = new JSONObject();
         try {
-            json.put("solicitante", null);
-            json.put("id", this.id);
-            json.put("data", this.data);
-            json.put("hora", this.hora);
-            json.put("local", this.local);
-            json.put("complemento", this.complemento);
+            json.put("cdpessoa", 1);
+            json.put("idpedidosos", this.id);
+            json.put("dtpedidosos", this.data);
+            json.put("hrpedidosos", this.hora);
+            json.put("delocal", this.local);
             json.put("cdporteanimal", this.porteAnimal);
             json.put("cdtipoanimal", this.tipoAnimal);
             json.put("cdsaudeanimal", this.saudeAnimal);

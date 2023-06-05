@@ -104,7 +104,7 @@
                     solicitante.setFoneSolicitante(etTelefone.getText().toString());
                     pedido.setSolicitante(solicitante);
                     //Pegando a Data do CalendarView
-                    SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+                    SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
                     String dataSelecionada = sdf.format(new Date(cvData.getDate()));
                     pedido.setData(dataSelecionada);
                     //pegando texto dos editTexts
@@ -116,10 +116,11 @@
                     pedido.setPorteAnimal((int)this.spPorteAnimal.getSelectedItemPosition());
                     //indice do item selecionado do Spinner saude animal
                     pedido.setSaudeAnimal((int)this.spSaudeAnimal.getSelectedItemPosition());
-
+                    //
+                    String json = pedido.toJsonObject().toString();
                     //request para servidor REST
                     jsonObjectReq = new JsonObjectRequest(Request.Method.POST,
-                            "http://10.0.2.2:8080/segServer/rest/usuario",
+                            "http://10.0.2.2/cadpedidosos.php",
                             pedido.toJsonObject(), this, this);
                     requestQueue.add(jsonObjectReq);
                     break;
