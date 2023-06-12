@@ -12,12 +12,6 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="br.dev.marcosvirgilio.mobile.sos4patas.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
-
-    <fragment
         android:id="@+id/navigation_notifications"
         android:name="br.dev.marcosvirgilio.mobile.sos4patas.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
@@ -25,7 +19,13 @@
 
     <fragment
         android:id="@+id/navigation_cad_pedido_sos"
-        android:name="br.dev.marcosvirgilio.mobile.sos4patas.ui.pedidosos.cadPedidoSos"
+        android:name="br.dev.marcosvirgilio.mobile.sos4patas.ui.pedidosos.CadPedidoSOSFragment"
         android:label="@string/title_cad_pedido_sos"
         tools:layout="@layout/fragment_cad_pedido_sos" />
+
+    <fragment
+        android:id="@+id/navigation_con_pedido_sos"
+        android:name="br.dev.marcosvirgilio.mobile.sos4patas.ui.pedidosos.ConPedidoSOSFragment"
+        android:label="@string/title_con_pedido_sos"
+        tools:layout="@layout/fragment_con_pedido_sos_list" />
 </navigation>

@@ -1,6 +1,5 @@
         package br.dev.marcosvirgilio.mobile.sos4patas.ui.pedidosos;
 
-        import android.content.Context;
         import android.os.Bundle;
 
         import androidx.appcompat.app.AppCompatActivity;
@@ -13,7 +12,6 @@
         import android.widget.CalendarView;
         import android.widget.EditText;
         import android.widget.Spinner;
-        import android.widget.Toast;
 
         import com.android.volley.Request;
         import com.android.volley.RequestQueue;
@@ -36,7 +34,7 @@
          * A simple {@link Fragment} subclass.
          * create an instance of this fragment.
          */
-        public class cadPedidoSos extends Fragment implements View.OnClickListener , Response.ErrorListener,
+        public class CadPedidoSOSFragment extends Fragment implements View.OnClickListener , Response.ErrorListener,
                 Response.Listener{
             //atributos
 
@@ -55,7 +53,7 @@
             private RequestQueue requestQueue;
             private JsonObjectRequest jsonObjectReq;
 
-            public cadPedidoSos() {
+            public CadPedidoSOSFragment() {
                 // Required empty public constructor
             }
             @Override
